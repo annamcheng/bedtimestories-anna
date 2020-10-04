@@ -5,20 +5,25 @@ class Index extends React.Component {
   render() {
     const {stories} = this.props
     return (
-      <Layout title="My Stories">
-        <h1> My Stories</h1>
-        <a href="/stories/new"><button>New Story</button></a>
-        {stories.map((story) =>
-          <div>
-          <h2>{story.story}</h2>
-        <form action={`/stories/${story._id}?_method=DELETE`} method="POST">
-            <input type="submit" value="delete"/>
-            </form>
-            <form action={`/stories/edit/${story._id}`} method="GET">
-              <input type="submit" value="edit" />
-            </form>
-          </div>
-        )}
+      <Layout title="Bedtime Stories">
+        <a href="/stories/new"><button>Create a new story</button></a>
+        <ul className="squares">
+          {stories.map((story, index) => {
+            return (
+              <div className="stories">
+                <a href={`/stories/${story._id}`}>
+                  <li style={{ color: "white" }}>{story.title}</li>
+                  <img
+                    src={story.img}
+                    width="120px"
+                    height="100px"
+                    className="book-image"
+                  />
+                </a>
+              </div>
+            );
+          })}
+        </ul>
       </Layout>
     );
   }

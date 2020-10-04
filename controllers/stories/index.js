@@ -30,6 +30,13 @@ router.get("/new", auth, async (req, res) => {
     console.log(error);
   }
 });
+
+router.post("/new", (req, res) => {
+  console.log(req.body)
+  Story.create(req.body, (err, newStory) => {
+    res.redirect("/stories/show.jsx", {story: newStory, index: newStory._id})
+  })
+})
 //DELETE ROUTE
 router.delete("/:id", auth, async (req, res) => {
   try {
@@ -44,7 +51,7 @@ router.delete("/:id", auth, async (req, res) => {
 router.put("/edit/:id", auth, async (req, res) => {
   try {
     req.body.username = req.session.username;
-    await Story.findByIdAndUpdate(req.params.id, req.body);
+    await Story.findByIdAndUpdate(req.params.id, req.body, {new: true});
     res.redirect("/stories/");
   } catch (error) {
     console.log(error);
@@ -72,6 +79,20 @@ router.get("/edit/:id", auth, async (req, res) => {
   }
 });
 
+//SHOW
+router.get("/:id", (req, res) => {
+  try {
+    Story.findById(req.params.id, (err, foundStory) => {
+      //find the story
+      res.render("stories/show.jsx", {
+        story: foundStory,
+        index: req.params.id
+      });
+    });
+  } catch (error) {
+    console.log(error);
+  }
+});
 //TEST ROUTE TO SHOW HOW AUTH MIDDLEWARE WORKS
 
 router.get("/", auth, (req, res) => {

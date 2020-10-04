@@ -10,6 +10,12 @@ const { Schema, model } = require("mongoose");
 const storySchema = new Schema({
   username: { type: String, required: true },
   story: String,
+  title: String,
+  img: String,
+  intro: String,
+  conflict: String,
+  turningPoint: String,
+  end: String,
 }, {timestamps: true});
 
 ////////////////////////////////////

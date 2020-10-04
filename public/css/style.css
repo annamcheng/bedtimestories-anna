@@ -1,0 +1,161 @@
+* {
+  font-family: "Lily Script One", cursive;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 auto;
+}
+body {
+  margin-left: 10px;
+  margin-right: 10px;
+  background-image: url("https://www.fabricsandpapers.com/media/catalog/product/cache/c687aa7517cf01e65c009f6943c2b1e9/s/t/starry-sky-wallpaper-indigo.jpg");
+  background-attachment: fixed;
+}
+
+h1 {
+  color: rgb(255, 252, 161);
+  font-family: "Petit Formal Script", cursive;
+}
+
+.credentials {
+  padding: 5px;
+  max-width: 600px;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  list-style-type: none;
+  margin: 2px auto;
+}
+
+.squares {
+  max-width: 800px;
+}
+.stories {
+  background-color: rgba(240, 248, 255, 0.406);
+  border: 1px dotted rgb(136, 136, 136);
+  border-radius: 10px;
+  padding: 5px;
+  text-decoration: none;
+  width: 150px;
+  margin-top: 40px;
+}
+
+#create-button {
+  padding: 10px;
+  height: 50px;
+  width: 250px;
+}
+
+a:hover {
+  color: rgba(255, 56, 56, 0.516);
+  text-decoration: none;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+#amc {
+  color: rgb(255, 252, 161);
+}
+
+.description-container {
+  max-width: 1000px;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.welcome-pg{
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 500px;
+    padding: 20px;
+    margin: 10px auto;
+    margin-top: 20px;
+}
+
+
+/* Responsive when website is 500px and bigger */
+@media screen and (min-width: 800px) {
+    .story-body {
+        display: flex;
+        align-items: center;
+    }
+    .redirect-buttons {
+        display: flex;
+    }
+    button,
+    .button {
+        font-family: "Comfortaa", cursive;
+        padding: 10px;
+        height: 50px;
+        width: 110px;
+    }
+    textarea {
+        min-width: 500px;
+        max-width: 500px;
+        max-height: 400px;
+        height: 100px;
+    }
+    .small-textbox {
+        height: 50px;
+        max-height: 100px;
+        width: 500px;
+        margin: 5px;
+    }
+    .story-container {
+      overflow: auto;
+      height: 500px;
+      width: 1000px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.358);
+      border-radius: 10px;
+      margin: 30px;
+    }
+}
+
+/* Responsive when website is 500px and smaller */
+@media screen and (max-width: 800px) {
+  * {
+    font-family: "Comfortaa", cursive;
+    font-size: 18px;
+  }
+  .showpg-image {
+    max-width: 300px;
+    height: 200px;
+  }
+  button,
+  .button {
+    width: 100px;
+  }
+    textarea {
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 400px;
+    height: 100px;
+  }
+ .small-textbox {
+  height: 50px;
+  max-height: 100px;
+  width: 300px;
+  margin: 5px;
+}
+    .story-container {
+      overflow: auto;
+      height: 500px;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, 0.358);
+      border-radius: 10px;
+      margin: 30px;
+    }
+}

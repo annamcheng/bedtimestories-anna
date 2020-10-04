@@ -6,9 +6,9 @@ class Login extends React.Component {
     return (
       <Layout title="LOGIN">
         <form action="/auth/login" method="post">
-          <input type="text" name="username" placeholder="username"/>
-          <input type="text" name="password" placeholder="password"/>
-          <input type="submit" value="login"/>
+          <input type="text" name="username" placeholder="username" className="credentials" /><br /><br />
+          <input type="text" name="password" placeholder="password" className="credentials" /><br /><br />
+          <input type="submit" value="login" className="credentials" />
         </form>
       </Layout>
     );
