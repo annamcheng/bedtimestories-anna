@@ -29,7 +29,7 @@ class Layout extends React.Component {
               <div class="container">
                 <ul class="nav nav-pills">
                   <li role="presentation" class="active">
-                    <a href="/">Home</a>
+                    <a href="/stories">Home</a>
                   </li>
                   <li role="presentation">
                     <a href="/auth/signup">Sign up</a>

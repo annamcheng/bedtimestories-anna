@@ -9,7 +9,7 @@ class Show extends React.Component {
         <div className="description-container">
           <h1 style={{ textDecoration: "underline" }}>{story.title}</h1>
           <div className="story-body">
-            <img src={story.img} height="400px" className="showpg-image" />
+            <img src={story.img} width="300px" className="showpg-image" />
             <br />
             <div className="story-container" style={{ color: "white" }}>
               <h3>{story.intro}</h3>
@@ -31,7 +31,7 @@ class Show extends React.Component {
                 style={{ color: "black" }}
               />
             </form>
-            <a href={`/`}>
+            <a href={`/stories`}>
               <button>HOME</button>
             </a>
           </div>

@@ -63,6 +63,7 @@ a:hover {
   top: 100%;
   left: 0;
   width: 100%;
+  margin-top: 20px;
 }
 
 #amc {
@@ -75,53 +76,51 @@ a:hover {
   padding: 10px;
 }
 
-.welcome-pg{
-    border: 1px solid white;
-    border-radius: 10px;
-    width: 500px;
-    padding: 20px;
-    margin: 10px auto;
-    margin-top: 20px;
+.welcome-pg {
+  border: 2px dotted white;
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px;
+  margin: 10px auto;
+  margin-top: 20px;
 }
-
 
 /* Responsive when website is 500px and bigger */
 @media screen and (min-width: 800px) {
-    .story-body {
-        display: flex;
-        align-items: center;
-    }
-    .redirect-buttons {
-        display: flex;
-    }
-    button,
-    .button {
-        font-family: "Comfortaa", cursive;
-        padding: 10px;
-        height: 50px;
-        width: 110px;
-    }
-    textarea {
-        min-width: 500px;
-        max-width: 500px;
-        max-height: 400px;
-        height: 100px;
-    }
-    .small-textbox {
-        height: 50px;
-        max-height: 100px;
-        width: 500px;
-        margin: 5px;
-    }
-    .story-container {
-      overflow: auto;
-      height: 500px;
-      width: 1000px;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, 0.358);
-      border-radius: 10px;
-      margin: 30px;
-    }
+  .story-body {
+    display: flex;
+    align-items: center;
+  }
+  .redirect-buttons {
+    display: flex;
+  }
+  button,
+  .button {
+    font-family: "Comfortaa", cursive;
+    padding: 10px;
+    height: 50px;
+  }
+  textarea {
+    min-width: 500px;
+    max-width: 500px;
+    max-height: 400px;
+    height: 100px;
+  }
+  .small-textbox {
+    height: 50px;
+    max-height: 100px;
+    width: 500px;
+    margin: 5px;
+  }
+  .story-container {
+    overflow: auto;
+    height: 500px;
+    width: 1000px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.358);
+    border-radius: 10px;
+    margin: 30px;
+  }
 }
 
 /* Responsive when website is 500px and smaller */
@@ -131,6 +130,7 @@ a:hover {
     font-size: 18px;
   }
   .showpg-image {
+    width: 300px;
     max-width: 300px;
     height: 200px;
   }
@@ -138,24 +138,24 @@ a:hover {
   .button {
     width: 100px;
   }
-    textarea {
+  textarea {
     min-width: 300px;
     max-width: 300px;
     max-height: 400px;
     height: 100px;
   }
- .small-textbox {
-  height: 50px;
-  max-height: 100px;
-  width: 300px;
-  margin: 5px;
-}
-    .story-container {
-      overflow: auto;
-      height: 500px;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, 0.358);
-      border-radius: 10px;
-      margin: 30px;
-    }
+  .small-textbox {
+    height: 50px;
+    max-height: 100px;
+    width: 300px;
+    margin: 5px;
+  }
+  .story-container {
+    overflow: auto;
+    height: 500px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.358);
+    border-radius: 10px;
+    margin: 30px;
+  }
 }
